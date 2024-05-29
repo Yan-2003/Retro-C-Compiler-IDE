@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>C IDE</title>
+  <title>C Compiler IDE</title>
   <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <button id="open--file--project--btn"><img src="../assets/folder.png" alt="" width="16">Open File</button>
+        <input type="file" name="project--file" id="project--file" style="display: none;" accept=".c">
+        <button id="save_c"><img src="../assets/save.png" alt="" width="16">Save</button>
+        <button><img src="../assets/play.png" alt="" width="16">Compile & Run</button>
+    </nav>
     <div class="container">
-        <div class="file--bar">s</div>
-        <textarea name="editor" id="" class="text--editor" spellcheck="false"></textarea>
+        <div class="num_line">1</div>
+        <textarea data-gramm="false" name="editor" id="editor" class="text--editor" spellcheck="false"></textarea>
     </div>
 </body>
 </html>
+<!-- script -->
+<script src="../scripts/text_indention.js"></script>
+<script src="../scripts/open_file_project.js"></script>
+
+<!-- controllers script -->
+<script src="../controllers/Save_Controller.js"></script>
