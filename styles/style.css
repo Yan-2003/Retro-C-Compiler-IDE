@@ -1,0 +1,26 @@
+*{
+    padding : 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.file--bar{
+    width: 25%;
+    height: 90vh;
+    border: 1px black solid;
+}
+
+.text--editor{
+    width: 100%;
+    height: 90vh;
+    resize: none;
+    outline: none;
+    border: none;
+}
